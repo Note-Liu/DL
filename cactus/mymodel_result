@@ -1,0 +1,747 @@
+
+True
+Models(
+  (Conv): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): ReLU()
+    (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (5): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (6): ReLU()
+    (7): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (10): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (11): ReLU()
+    (12): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (13): ReLU()
+    (14): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (15): ReLU()
+    (16): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (17): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (18): ReLU()
+    (19): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (20): ReLU()
+    (21): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (22): ReLU()
+    (23): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (Classes): Sequential(
+    (0): Linear(in_features=8192, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.5)
+    (3): Linear(in_features=1024, out_features=1024, bias=True)
+    (4): Sigmoid()
+    (5): Dropout(p=0.5)
+    (6): Linear(in_features=1024, out_features=2, bias=True)
+  )
+)
+ 
+lr = 0.00001:
+
+Epoch 0/19
+----------
+Training...
+Batch400,Train Loss:0.4676,Train Acc:77.2500%
+Batch800,Train Loss:0.3491,Train Acc:84.1953%
+train Loss:0.3342 Acc:85.0929%
+Validing...
+valid Loss:0.4432 Acc:86.2571%
+Epoch 1/19
+----------
+Training...
+Batch400,Train Loss:0.1886,Train Acc:92.6562%
+Batch800,Train Loss:0.1918,Train Acc:92.5625%
+train Loss:0.1882 Acc:92.7571%
+Validing...
+valid Loss:0.6203 Acc:83.4286%
+Epoch 2/19
+----------
+Training...
+Batch400,Train Loss:0.1723,Train Acc:93.1562%
+Batch800,Train Loss:0.1664,Train Acc:93.4922%
+train Loss:0.1666 Acc:93.5357%
+Validing...
+valid Loss:0.6275 Acc:83.1714%
+Epoch 3/19
+----------
+Training...
+Batch400,Train Loss:0.1606,Train Acc:93.9531%
+Batch800,Train Loss:0.1517,Train Acc:94.2656%
+train Loss:0.1502 Acc:94.3643%
+Validing...
+valid Loss:0.6449 Acc:85.2571%
+Epoch 4/19
+----------
+Training...
+Batch400,Train Loss:0.1491,Train Acc:94.1562%
+Batch800,Train Loss:0.1372,Train Acc:94.6172%
+train Loss:0.1382 Acc:94.5714%
+Validing...
+valid Loss:0.9123 Acc:82.3429%
+Epoch 5/19
+----------
+Training...
+Batch400,Train Loss:0.1189,Train Acc:95.1406%
+Batch800,Train Loss:0.1217,Train Acc:95.1016%
+train Loss:0.1238 Acc:95.0357%
+Validing...
+valid Loss:1.0250 Acc:80.3714%
+Epoch 6/19
+----------
+Training...
+Batch400,Train Loss:0.1218,Train Acc:94.9375%
+Batch800,Train Loss:0.1188,Train Acc:95.3047%
+train Loss:0.1179 Acc:95.3429%
+Validing...
+valid Loss:1.1450 Acc:80.8000%
+Epoch 7/19
+----------
+Training...
+Batch400,Train Loss:0.1134,Train Acc:95.4844%
+Batch800,Train Loss:0.1090,Train Acc:95.7812%
+train Loss:0.1080 Acc:95.8857%
+Validing...
+valid Loss:1.1560 Acc:81.2000%
+Epoch 8/19
+----------
+Training...
+Batch400,Train Loss:0.1171,Train Acc:95.5312%
+Batch800,Train Loss:0.1121,Train Acc:95.6406%
+train Loss:0.1111 Acc:95.6714%
+Validing...
+valid Loss:1.3736 Acc:79.6000%
+Epoch 9/19
+----------
+Training...
+Batch400,Train Loss:0.1096,Train Acc:95.6562%
+Batch800,Train Loss:0.1057,Train Acc:95.8516%
+train Loss:0.1025 Acc:95.9786%
+Validing...
+valid Loss:1.2776 Acc:80.8857%
+Epoch 10/19
+----------
+Training...
+Batch400,Train Loss:0.1020,Train Acc:95.9375%
+Batch800,Train Loss:0.1019,Train Acc:95.9375%
+train Loss:0.0998 Acc:96.0214%
+Validing...
+valid Loss:1.5734 Acc:78.9714%
+Epoch 11/19
+----------
+Training...
+Batch400,Train Loss:0.1007,Train Acc:95.8438%
+Batch800,Train Loss:0.0960,Train Acc:96.0625%
+train Loss:0.0969 Acc:96.0500%
+Validing...
+valid Loss:1.2282 Acc:80.6857%
+Epoch 12/19
+----------
+Training...
+Batch400,Train Loss:0.0896,Train Acc:96.5469%
+Batch800,Train Loss:0.0922,Train Acc:96.5156%
+train Loss:0.0925 Acc:96.4714%
+Validing...
+valid Loss:1.4464 Acc:79.4857%
+Epoch 13/19
+----------
+Training...
+Batch400,Train Loss:0.0901,Train Acc:96.4688%
+Batch800,Train Loss:0.0878,Train Acc:96.5938%
+train Loss:0.0875 Acc:96.6214%
+Validing...
+valid Loss:1.4773 Acc:79.6286%
+Epoch 14/19
+----------
+Training...
+Batch400,Train Loss:0.0849,Train Acc:96.7031%
+Batch800,Train Loss:0.0826,Train Acc:96.8047%
+train Loss:0.0833 Acc:96.7857%
+Validing...
+valid Loss:1.3418 Acc:80.4000%
+Epoch 15/19
+----------
+Training...
+Batch400,Train Loss:0.0786,Train Acc:97.0312%
+Batch800,Train Loss:0.0836,Train Acc:96.8359%
+train Loss:0.0844 Acc:96.7500%
+Validing...
+valid Loss:1.5580 Acc:79.4286%
+Epoch 16/19
+----------
+Training...
+Batch400,Train Loss:0.0775,Train Acc:96.9219%
+Batch800,Train Loss:0.0768,Train Acc:96.9453%
+train Loss:0.0772 Acc:96.9714%
+Validing...
+valid Loss:1.4584 Acc:79.9429%
+Epoch 17/19
+----------
+Training...
+Batch400,Train Loss:0.0736,Train Acc:97.0156%
+Batch800,Train Loss:0.0752,Train Acc:97.1094%
+train Loss:0.0771 Acc:96.9929%
+Validing...
+valid Loss:1.7891 Acc:77.8857%
+Epoch 18/19
+----------
+Training...
+Batch400,Train Loss:0.0745,Train Acc:97.2188%
+Batch800,Train Loss:0.0722,Train Acc:97.3281%
+train Loss:0.0725 Acc:97.3214%
+Validing...
+valid Loss:1.6104 Acc:79.0571%
+Epoch 19/19
+----------
+Training...
+Batch400,Train Loss:0.0664,Train Acc:97.2656%
+Batch800,Train Loss:0.0722,Train Acc:97.3516%
+train Loss:0.0724 Acc:97.3071%
+Validing...
+valid Loss:1.7153 Acc:78.4286%
+2636.5334742069244
+
+
+
+
+lr = 0.0001  
+
+Epoch 0/19
+----------
+Training...
+Batch400,Train Loss:0.3027,Train Acc:87.2969%
+Batch800,Train Loss:0.2518,Train Acc:89.8281%
+train Loss:0.2454 Acc:90.1000%
+Validing...
+valid Loss:0.7749 Acc:82.1143%
+Epoch 1/19
+----------
+Training...
+Batch400,Train Loss:0.1630,Train Acc:94.1094%
+Batch800,Train Loss:0.1557,Train Acc:94.1172%
+train Loss:0.1544 Acc:94.1857%
+Validing...
+valid Loss:0.8860 Acc:81.0571%
+Epoch 2/19
+----------
+Training...
+Batch400,Train Loss:0.1217,Train Acc:95.2969%
+Batch800,Train Loss:0.1248,Train Acc:95.2031%
+train Loss:0.1229 Acc:95.3143%
+Validing...
+valid Loss:1.2314 Acc:79.9143%
+Epoch 3/19
+----------
+Training...
+Batch400,Train Loss:0.1119,Train Acc:95.4844%
+Batch800,Train Loss:0.1063,Train Acc:95.7188%
+train Loss:0.1067 Acc:95.6786%
+Validing...
+valid Loss:1.6891 Acc:77.5143%
+Epoch 4/19
+----------
+Training...
+Batch400,Train Loss:0.1054,Train Acc:95.7656%
+Batch800,Train Loss:0.1004,Train Acc:95.9922%
+train Loss:0.0979 Acc:96.1143%
+Validing...
+valid Loss:1.5036 Acc:78.3143%
+Epoch 5/19
+----------
+Training...
+Batch400,Train Loss:0.0942,Train Acc:96.4531%
+Batch800,Train Loss:0.0891,Train Acc:96.5078%
+train Loss:0.0882 Acc:96.5929%
+Validing...
+valid Loss:1.4243 Acc:78.2857%
+Epoch 6/19
+----------
+Training...
+Batch400,Train Loss:0.0779,Train Acc:97.0469%
+Batch800,Train Loss:0.0809,Train Acc:96.8359%
+train Loss:0.0819 Acc:96.7929%
+Validing...
+valid Loss:1.4396 Acc:77.8286%
+Epoch 7/19
+----------
+Training...
+Batch400,Train Loss:0.0795,Train Acc:97.0625%
+Batch800,Train Loss:0.0760,Train Acc:97.2422%
+train Loss:0.0766 Acc:97.2643%
+Validing...
+valid Loss:1.3597 Acc:78.6571%
+Epoch 8/19
+----------
+Training...
+Batch400,Train Loss:0.0704,Train Acc:97.2969%
+Batch800,Train Loss:0.0697,Train Acc:97.4688%
+train Loss:0.0705 Acc:97.3929%
+Validing...
+valid Loss:1.4429 Acc:78.2000%
+Epoch 9/19
+----------
+Training...
+Batch400,Train Loss:0.0691,Train Acc:97.3750%
+Batch800,Train Loss:0.0697,Train Acc:97.3359%
+train Loss:0.0685 Acc:97.4000%
+Validing...
+valid Loss:1.5229 Acc:78.0000%
+Epoch 10/19
+----------
+Training...
+Batch400,Train Loss:0.0682,Train Acc:97.6094%
+Batch800,Train Loss:0.0672,Train Acc:97.5938%
+train Loss:0.0660 Acc:97.6286%
+Validing...
+valid Loss:1.4870 Acc:78.0571%
+Epoch 11/19
+----------
+Training...
+Batch400,Train Loss:0.0604,Train Acc:97.6875%
+Batch800,Train Loss:0.0610,Train Acc:97.6641%
+train Loss:0.0596 Acc:97.7286%
+Validing...
+valid Loss:1.5368 Acc:78.0286%
+Epoch 12/19
+----------
+Training...
+Batch400,Train Loss:0.0601,Train Acc:97.8281%
+Batch800,Train Loss:0.0589,Train Acc:97.8516%
+train Loss:0.0596 Acc:97.8357%
+Validing...
+valid Loss:1.5741 Acc:77.5143%
+Epoch 13/19
+----------
+Training...
+Batch400,Train Loss:0.0602,Train Acc:97.7656%
+Batch800,Train Loss:0.0569,Train Acc:97.8125%
+train Loss:0.0559 Acc:97.8357%
+Validing...
+valid Loss:1.5555 Acc:78.2286%
+Epoch 14/19
+----------
+Training...
+Batch400,Train Loss:0.0571,Train Acc:97.8906%
+Batch800,Train Loss:0.0538,Train Acc:98.0078%
+train Loss:0.0533 Acc:98.0143%
+Validing...
+valid Loss:1.6182 Acc:77.4571%
+Epoch 15/19
+----------
+Training...
+Batch400,Train Loss:0.0468,Train Acc:98.4062%
+Batch800,Train Loss:0.0477,Train Acc:98.3125%
+train Loss:0.0486 Acc:98.2714%
+Validing...
+valid Loss:1.6008 Acc:77.4286%
+Epoch 16/19
+----------
+Training...
+Batch400,Train Loss:0.0518,Train Acc:98.0156%
+Batch800,Train Loss:0.0496,Train Acc:98.1484%
+train Loss:0.0503 Acc:98.1643%
+Validing...
+valid Loss:1.6517 Acc:77.0857%
+Epoch 17/19
+----------
+Training...
+Batch400,Train Loss:0.0487,Train Acc:98.1562%
+Batch800,Train Loss:0.0465,Train Acc:98.2812%
+train Loss:0.0461 Acc:98.3071%
+Validing...
+valid Loss:1.7066 Acc:77.0857%
+Epoch 18/19
+----------
+Training...
+Batch400,Train Loss:0.0460,Train Acc:98.2812%
+Batch800,Train Loss:0.0456,Train Acc:98.3750%
+train Loss:0.0449 Acc:98.3857%
+Validing...
+valid Loss:1.6230 Acc:78.1429%
+Epoch 19/19
+----------
+Training...
+Batch400,Train Loss:0.0441,Train Acc:98.3594%
+Batch800,Train Loss:0.0474,Train Acc:98.3281%
+train Loss:0.0461 Acc:98.3929%
+Validing...
+valid Loss:1.8117 Acc:77.0857%
+2641.782186985016
+
+
+p = 0.6
+
+  Epoch 0/19
+----------
+Training...
+Batch400,Train Loss:0.4655,Train Acc:77.7188%
+Batch800,Train Loss:0.3454,Train Acc:84.7891%
+train Loss:0.3353 Acc:85.3643%
+Validing...
+valid Loss:0.4106 Acc:85.3429%
+Epoch 1/19
+----------
+Training...
+Batch400,Train Loss:0.2043,Train Acc:92.5000%
+Batch800,Train Loss:0.2002,Train Acc:92.4531%
+train Loss:0.1984 Acc:92.4714%
+Validing...
+valid Loss:0.7200 Acc:81.9429%
+Epoch 2/19
+----------
+Training...
+Batch400,Train Loss:0.1645,Train Acc:93.8125%
+Batch800,Train Loss:0.1718,Train Acc:93.4531%
+train Loss:0.1691 Acc:93.5357%
+Validing...
+valid Loss:0.8818 Acc:81.6857%
+Epoch 3/19
+----------
+Training...
+Batch400,Train Loss:0.1485,Train Acc:94.1406%
+Batch800,Train Loss:0.1490,Train Acc:94.2109%
+train Loss:0.1496 Acc:94.2214%
+Validing...
+valid Loss:1.0324 Acc:79.7429%
+Epoch 4/19
+----------
+Training...
+Batch400,Train Loss:0.1342,Train Acc:94.7500%
+Batch800,Train Loss:0.1369,Train Acc:94.4375%
+train Loss:0.1340 Acc:94.5857%
+Validing...
+valid Loss:1.0723 Acc:81.0571%
+Epoch 5/19
+----------
+Training...
+Batch400,Train Loss:0.1306,Train Acc:94.8906%
+Batch800,Train Loss:0.1281,Train Acc:95.0156%
+train Loss:0.1293 Acc:94.9071%
+Validing...
+valid Loss:1.1789 Acc:80.0286%
+Epoch 6/19
+----------
+Training...
+Batch400,Train Loss:0.1289,Train Acc:94.6562%
+Batch800,Train Loss:0.1206,Train Acc:94.9922%
+train Loss:0.1207 Acc:94.9929%
+Validing...
+valid Loss:1.4615 Acc:78.9429%
+Epoch 7/19
+----------
+Training...
+Batch400,Train Loss:0.1108,Train Acc:95.6562%
+Batch800,Train Loss:0.1121,Train Acc:95.6250%
+train Loss:0.1122 Acc:95.6571%
+Validing...
+valid Loss:1.5032 Acc:78.6000%
+Epoch 8/19
+----------
+Training...
+Batch400,Train Loss:0.1156,Train Acc:95.2500%
+Batch800,Train Loss:0.1149,Train Acc:95.3984%
+train Loss:0.1151 Acc:95.3929%
+Validing...
+valid Loss:1.4588 Acc:78.7714%
+Epoch 9/19
+----------
+Training...
+Batch400,Train Loss:0.1031,Train Acc:95.8594%
+Batch800,Train Loss:0.1028,Train Acc:95.8516%
+train Loss:0.1030 Acc:95.8643%
+Validing...
+valid Loss:1.2079 Acc:81.2286%
+Epoch 10/19
+----------
+Training...
+Batch400,Train Loss:0.1018,Train Acc:95.9531%
+Batch800,Train Loss:0.0985,Train Acc:96.0781%
+train Loss:0.0993 Acc:96.0714%
+Validing...
+valid Loss:1.4831 Acc:79.1143%
+Epoch 11/19
+----------
+Training...
+Batch400,Train Loss:0.1001,Train Acc:96.0938%
+Batch800,Train Loss:0.0969,Train Acc:96.1328%
+train Loss:0.0948 Acc:96.2714%
+Validing...
+valid Loss:1.4481 Acc:80.0286%
+Epoch 12/19
+----------
+Training...
+Batch400,Train Loss:0.0889,Train Acc:96.4844%
+Batch800,Train Loss:0.0917,Train Acc:96.4375%
+train Loss:0.0907 Acc:96.4571%
+Validing...
+valid Loss:1.4975 Acc:79.5143%
+Epoch 13/19
+----------
+Training...
+Batch400,Train Loss:0.1026,Train Acc:96.2031%
+Batch800,Train Loss:0.0952,Train Acc:96.4609%
+train Loss:0.0937 Acc:96.4714%
+Validing...
+valid Loss:1.5447 Acc:79.2286%
+Epoch 14/19
+----------
+Training...
+Batch400,Train Loss:0.0920,Train Acc:96.0781%
+Batch800,Train Loss:0.0923,Train Acc:96.2578%
+train Loss:0.0900 Acc:96.3643%
+Validing...
+valid Loss:1.9070 Acc:77.1429%
+Epoch 15/19
+----------
+Training...
+Batch400,Train Loss:0.0901,Train Acc:96.5781%
+Batch800,Train Loss:0.0903,Train Acc:96.4453%
+train Loss:0.0891 Acc:96.5143%
+Validing...
+valid Loss:1.6841 Acc:78.3714%
+Epoch 16/19
+----------
+Training...
+Batch400,Train Loss:0.0927,Train Acc:96.2812%
+Batch800,Train Loss:0.0858,Train Acc:96.6719%
+train Loss:0.0856 Acc:96.6929%
+Validing...
+valid Loss:1.5418 Acc:79.2857%
+Epoch 17/19
+----------
+Training...
+Batch400,Train Loss:0.0779,Train Acc:97.0156%
+Batch800,Train Loss:0.0778,Train Acc:97.0078%
+train Loss:0.0774 Acc:97.0143%
+Validing...
+valid Loss:1.6240 Acc:79.1143%
+Epoch 18/19
+----------
+Training...
+Batch400,Train Loss:0.0827,Train Acc:96.9062%
+Batch800,Train Loss:0.0814,Train Acc:96.8906%
+train Loss:0.0803 Acc:96.9000%
+Validing...
+valid Loss:1.7491 Acc:78.3429%
+Epoch 19/19
+----------
+Training...
+Batch400,Train Loss:0.0766,Train Acc:96.9688%
+Batch800,Train Loss:0.0731,Train Acc:97.2266%
+train Loss:0.0740 Acc:97.1429%
+Validing...
+valid Loss:1.8233 Acc:77.3714%
+2651.8499524593353
+
+
+p = 0.5,加入batchnorm
+True
+Models(
+  (Conv): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (7): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (8): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (9): ReLU()
+    (10): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (11): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (12): ReLU()
+    (13): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (14): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (15): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (16): ReLU()
+    (17): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (18): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (19): ReLU()
+    (20): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (21): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (22): ReLU()
+    (23): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (24): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (25): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (26): ReLU()
+    (27): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (28): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (29): ReLU()
+    (30): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (31): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (32): ReLU()
+    (33): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (Classes): Sequential(
+    (0): Linear(in_features=8192, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.5)
+    (3): Linear(in_features=1024, out_features=1024, bias=True)
+    (4): Sigmoid()
+    (5): Dropout(p=0.5)
+    (6): Linear(in_features=1024, out_features=2, bias=True)
+  )
+)
+Epoch 0/19
+----------
+Training...
+Batch400,Train Loss:0.2728,Train Acc:88.2500%
+Batch800,Train Loss:0.2211,Train Acc:90.7578%
+train Loss:0.2151 Acc:91.0571%
+Validing...
+valid Loss:0.8611 Acc:82.6857%
+Epoch 1/19
+----------
+Training...
+Batch400,Train Loss:0.1318,Train Acc:94.8438%
+Batch800,Train Loss:0.1266,Train Acc:95.0391%
+train Loss:0.1237 Acc:95.1857%
+Validing...
+valid Loss:1.2669 Acc:79.8286%
+Epoch 2/19
+----------
+Training...
+Batch400,Train Loss:0.1096,Train Acc:95.7344%
+Batch800,Train Loss:0.1080,Train Acc:95.8906%
+train Loss:0.1066 Acc:95.9071%
+Validing...
+valid Loss:1.1584 Acc:80.4000%
+Epoch 3/19
+----------
+Training...
+Batch400,Train Loss:0.0985,Train Acc:96.3594%
+Batch800,Train Loss:0.0888,Train Acc:96.7656%
+train Loss:0.0884 Acc:96.7357%
+Validing...
+valid Loss:1.6316 Acc:78.7714%
+Epoch 4/19
+----------
+Training...
+Batch400,Train Loss:0.0725,Train Acc:97.2344%
+Batch800,Train Loss:0.0766,Train Acc:97.1406%
+train Loss:0.0758 Acc:97.2286%
+Validing...
+valid Loss:1.5832 Acc:79.1714%
+Epoch 5/19
+----------
+Training...
+Batch400,Train Loss:0.0719,Train Acc:97.3438%
+Batch800,Train Loss:0.0748,Train Acc:97.2109%
+train Loss:0.0740 Acc:97.2286%
+Validing...
+valid Loss:1.5436 Acc:79.2286%
+Epoch 6/19
+----------
+Training...
+Batch400,Train Loss:0.0789,Train Acc:96.9688%
+Batch800,Train Loss:0.0745,Train Acc:97.1719%
+train Loss:0.0742 Acc:97.1786%
+Validing...
+valid Loss:1.3786 Acc:79.4857%
+Epoch 7/19
+----------
+Training...
+Batch400,Train Loss:0.0608,Train Acc:97.7344%
+Batch800,Train Loss:0.0642,Train Acc:97.5469%
+train Loss:0.0642 Acc:97.5429%
+Validing...
+valid Loss:1.4615 Acc:79.6286%
+Epoch 8/19
+----------
+Training...
+Batch400,Train Loss:0.0696,Train Acc:97.4219%
+Batch800,Train Loss:0.0648,Train Acc:97.5391%
+train Loss:0.0653 Acc:97.5429%
+Validing...
+valid Loss:1.4856 Acc:79.1714%
+Epoch 9/19
+----------
+Training...
+Batch400,Train Loss:0.0582,Train Acc:97.9375%
+Batch800,Train Loss:0.0585,Train Acc:97.8984%
+train Loss:0.0566 Acc:97.9714%
+Validing...
+valid Loss:1.6358 Acc:79.4571%
+Epoch 10/19
+----------
+Training...
+Batch400,Train Loss:0.0589,Train Acc:97.8438%
+Batch800,Train Loss:0.0610,Train Acc:97.7812%
+train Loss:0.0610 Acc:97.7500%
+Validing...
+valid Loss:1.6359 Acc:78.7143%
+Epoch 11/19
+----------
+Training...
+Batch400,Train Loss:0.0535,Train Acc:98.1406%
+Batch800,Train Loss:0.0553,Train Acc:97.9297%
+train Loss:0.0563 Acc:97.8571%
+Validing...
+valid Loss:1.8022 Acc:78.0000%
+Epoch 12/19
+----------
+Training...
+Batch400,Train Loss:0.0560,Train Acc:97.9375%
+Batch800,Train Loss:0.0548,Train Acc:97.9766%
+train Loss:0.0557 Acc:97.9357%
+Validing...
+valid Loss:1.6760 Acc:78.9143%
+Epoch 13/19
+----------
+Training...
+Batch400,Train Loss:0.0566,Train Acc:97.7344%
+Batch800,Train Loss:0.0543,Train Acc:97.9844%
+train Loss:0.0542 Acc:97.9929%
+Validing...
+valid Loss:1.8009 Acc:77.8286%
+Epoch 14/19
+----------
+Training...
+Batch400,Train Loss:0.0467,Train Acc:98.2344%
+Batch800,Train Loss:0.0493,Train Acc:98.2031%
+train Loss:0.0487 Acc:98.2429%
+Validing...
+valid Loss:1.9473 Acc:77.7143%
+Epoch 15/19
+----------
+Training...
+Batch400,Train Loss:0.0533,Train Acc:98.1406%
+Batch800,Train Loss:0.0543,Train Acc:98.0234%
+train Loss:0.0528 Acc:98.0643%
+Validing...
+valid Loss:1.7021 Acc:78.5714%
+Epoch 16/19
+----------
+Training...
+Batch400,Train Loss:0.0546,Train Acc:97.8125%
+Batch800,Train Loss:0.0522,Train Acc:98.0078%
+train Loss:0.0519 Acc:98.0071%
+Validing...
+valid Loss:1.7886 Acc:78.1714%
+Epoch 17/19
+----------
+Training...
+Batch400,Train Loss:0.0482,Train Acc:98.2031%
+Batch800,Train Loss:0.0453,Train Acc:98.3984%
+train Loss:0.0461 Acc:98.3571%
+Validing...
+valid Loss:1.7356 Acc:78.1429%
+Epoch 18/19
+----------
+Training...
+Batch400,Train Loss:0.0443,Train Acc:98.4062%
+Batch800,Train Loss:0.0436,Train Acc:98.3516%
+train Loss:0.0435 Acc:98.3571%
+Validing...
+valid Loss:1.7453 Acc:78.5143%
+Epoch 19/19
+----------
+Training...
+Batch400,Train Loss:0.0463,Train Acc:98.4219%
+Batch800,Train Loss:0.0464,Train Acc:98.4141%
+train Loss:0.0459 Acc:98.4214%
+Validing...
+valid Loss:1.6789 Acc:79.0286%
+2691.990765094757
